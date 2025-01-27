@@ -1,0 +1,18 @@
+<h1>Hello world</h1>
+<ul>
+  <li><strong>Rails version:</strong> <%= Rails.version %></li>
+  <li><strong>Rack version:</strong> <%= Rack.release %></li>
+  <li><strong>Ruby version:</strong> <%= RUBY_DESCRIPTION %></li>
+  <li>
+    <strong>
+      eppo-server-sdk version:
+    </strong>
+    <%= Gem.loaded_specs["eppo-server-sdk"].version %>
+  </li>
+  <li>
+    <strong>
+      sdk-event-logging:
+    </strong>
+    <%= Rails.application.eppo_client.get_boolean_assignment("sdk-event-logging", 'foo', { companyId: 82 }, false) %>
+  </li>
+</ul>
