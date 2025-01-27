@@ -13,6 +13,6 @@
     <strong>
       sdk-event-logging:
     </strong>
-    <%= Rails.application.eppo_client.get_boolean_assignment("sdk-event-logging", 'foo', { companyId: 82 }, false) %>
+    <%= Rails.application.config.eppo_client.get_boolean_assignment("sdk-event-logging", 'foo', { companyId: 82 }, false) %>
   </li>
 </ul>
