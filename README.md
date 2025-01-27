@@ -14,3 +14,5 @@ docker build \
 ```
 docker run --rm -p 3000:3000 rails-eppo-example
 ```
+
+The website should then be running on http://localhost:3000
